@@ -1,0 +1,106 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterName": {
+            "value": "test-2"
+        },
+        "clusterLocation": {
+            "value": "uksouth"
+        },
+        "computeLocation": {
+            "value": "uksouth"
+        },
+        "adminUserName": {
+            "value": "testadmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "nicName": {
+            "value": "NIC-test-2"
+        },
+        "nt0InstanceCount": {
+            "value": "5"
+        },
+        /*
+        "publicIPAddressName": {
+            "value": "tesbIt-2-PuP"
+        },
+        */
+        "internalLBAddress": {
+            "value": "10.3.8.250"
+        },
+        "addressPrefix":{
+            "value": "10.3.8.0/24"
+        },
+        "subnet0Name": {
+            "value": "Subnet-0"
+        },
+        "subnet0Prefix": {
+            "value": "10.3.8.0/24"
+        },
+        "existingVNetRGName": {
+            "value": "test-sf-2"
+        },
+        "existingVNetName": {
+            "value": "VNet-test-2"
+        },
+        /*
+        "dnsName": {
+            "value": "test-2"
+        },
+        */
+        "virtualNetworkName": {
+            "value": "VNet-test-2"
+        },
+        "lbName": {
+            "value": "LB-test-2"
+        },
+        "lbIPName": {
+            "value": "LBIP-test-2"
+        },
+        "applicationDiagnosticsStorageAccountName": {
+            "value": "sfdgtest22820"
+        },
+        "applicationInsightsKey": {
+            "value": "91520434-314b-4602-a86d-c8cd4126b64a"
+        },
+        "supportLogStorageAccountName": {
+            "value": "sflogstest24645"
+        },
+        "sourceVaultValue": {
+            "value": "/subscriptions/4125e640-51bc-48c3-aa76-30fae17f76bb/resourceGroups/test-sf-2/providers/Microsoft.KeyVault/vaults/test-sf-2"
+        },
+        "certificateUrlValue": {
+            "value": "https://test-sf-2.vault.azure.net/secrets/test-sf-2/4833e3aa6a44446fb150378b3f8f367f"
+        },
+        "certificateThumbprint": {
+            "value": "8D4CF2154E1B7DA7CADFE15B6D292C803883FB3E"
+        },
+        "vmImageSku": {
+            "value": "2019-Datacenter"
+        },
+        "vmImageOffer": {
+            "value": "WindowsServer"
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        }
+    }
+}
